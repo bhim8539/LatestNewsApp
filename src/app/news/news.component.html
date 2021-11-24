@@ -1,0 +1,67 @@
+<div class="site-layout">
+    <div class="news-container">
+      <div class="header-container ">
+        <div class="toggle-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="logo" id="">
+          <a href="/" data-action="primary-nav-logo" aria-label="Logo">
+            <img
+              src="https://time.com/img/time-logo-red.svg"
+              role="image"
+              alt="Time logo"
+            />
+          </a>
+        </div>
+        <div class="text-container">
+          <span class="first-text">AMERICA MUST CHANGE</span>
+          <span class="text">RACISM AND COVID-19</span>
+          <span class="text">INEQUALITY</span>
+          <span class="text">BLACK, DISABLED AND AT RISK</span>
+          <i class="fa fa-newspaper-o"></i>
+          <span class="text">NEWSLETTER</span>
+          <div class="search-container">
+            <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <section class="stories-module new">
+        <h1 class="module-title decoration-arrow">new Stories</h1>
+        <ol class="news-stories">
+            <li *ngFor = "let data of dataArr">
+                <article className="box-content">
+                  <div className="content">
+                    <p className="divider"></p>
+                    <h2 className="title">
+                      <a href={{data.link}}>{{data.title}}</a>
+                    </h2>
+                  </div>
+                </article>
+              </li>
+        </ol>
+      </section>
+      <section class="stories-module issue">
+        <div class="heading">
+          <h3>Inside the Issue</h3>
+        </div>
+        <div class="issue-container">
+          <div class="main">
+            <article class="box-content">
+              <div class="media">
+                <figure>
+                  <a href="https://ti.me/305eirS">
+                    <img
+                      src="https://ak.picdn.net/shutterstock/videos/19836106/thumb/1.jpg"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
