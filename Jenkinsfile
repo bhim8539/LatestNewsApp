@@ -9,6 +9,7 @@ pipeline {
                     sh """
                         ssh -v -o StrictHostKeyChecking=no ${remoteUser}@${remoteServer}
                     """
+                }
             }
         }
     }
