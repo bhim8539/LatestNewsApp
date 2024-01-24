@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('SSH to Windows Server') {
             steps {
-                script {}
+                script {
                 
                     sh """
                         ssh -v -o StrictHostKeyChecking=no ${remoteUser}@${remoteServer}
