@@ -7,7 +7,7 @@ pipeline {
                 script {
                 
                     sh """
-                        ssh -v -o StrictHostKeyChecking=no ${remoteUser}@${remoteServer}
+                        ssh -v ${params.remoteUser}@${params.remoteServer}
                     """
                 }
             }
