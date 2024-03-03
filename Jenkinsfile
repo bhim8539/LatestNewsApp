@@ -27,7 +27,7 @@ pipeline {
             }
             steps {
                 script {
-                  sh 'echo Hello Friend'
+                  bat 'echo Hello Friend'
                 }
             }
         }
